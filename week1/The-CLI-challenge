@@ -1,0 +1,26 @@
+1- How do I create a hidden file or folder ? How I display it in the CLI ?
+
+To create hide file we can use “touch .<file name >” by add (.) before the name of file
+Ex: touch .test.txt 
+
+To create hide folder we can use “mkdir .<directory_name>” by add (.) before the name of folder
+
+To display the hidden files & folders in CLI we use “ls -a”.
+
+
+2- How do I create multiple nested directories ?
+
+mkdir -p these/folder/just/for/fun
+
+
+3- How do I append a message to a file, without a newline character ?
+
+We can use :  echo <text> >> <file_name>
+Ex : echo Hello I’am George >> test.txt . 
+
+And to put the sentences next to each other we use “echo -n <text> >> <file_name>”.
+
+* we can use printf “<text>” >> <file_name>
+And to make newline character we use “\n”
+
+Ex : prientf “Hi , I am George \n This is my homework” >> text.txt

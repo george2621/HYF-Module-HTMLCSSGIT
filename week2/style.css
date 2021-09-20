@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  background: url("./images/pexels-darrel-und-1087182.jpg") no-repeat center
+    center/cover;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 60px;
+  color: #000;
+  font-weight: bold;
+  width: 20%;
+  margin: auto;
+}
+
+h2 {
+  border: 2px solid #850808;
+  border-radius: 20px;
+  background: #850808;
+  color: #fff;
+  padding: 10px;
+}
+
+h3 {
+  background: #333;
+  padding: 20px;
+  color: #fff;
+  text-decoration: underline;
+}
+.grid-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 40px;
+}
+
+.grid-item {
+  background: rgb(243, 241, 225);
+  height: 500px;
+  border: solid 3px #850808;
+  border-radius: 20px;
+  margin: 30px 10px;
+  text-decoration: none;
+  overflow: auto;
+  box-shadow: 10px 10px 50px gray;
+  transition: all 0.9s;
+}
+
+.grid-item p {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.grid-item:hover {
+  background: rgb(241, 229, 136);
+  color: #333;
+}
+
+.grid-flex .grid-item {
+  flex: 1 0 28%;
+  text-align: center;
+  font-size: 25px;
+}
+
+img {
+  width: 200px;
+}
+
+.grid-flex .grid-item:first-child {
+  flex: 2 0 58%;
+}
+
+/* Mobile Mode  */
+@media (max-width: 600px) {
+  .grid-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-floats {
+    margin-right: 40px;
+  }
+  .grid-floats .grid-item {
+    text-align: center;
+  }
+  h2 {
+    width: 80%;
+  }
+}
+
+/* IPad Mode  */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .grid-floats .grid-item {
+    float: left;
+    width: 28%;
+    text-align: center;
+    overflow: auto;
+  }
+
+  .grid-floats::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .grid-floats .grid-item:first-child {
+    float: left;
+    width: 43%;
+  }
+  .grid-floats .grid-item:nth-child(2) {
+    width: 43%;
+  }
+
+  .grid-flex .grid-item {
+    flex: 1 2 25%;
+  }
+  .grid-flex .grid-item:first-child {
+    flex: 1 1 45%;
+  }
+
+  .grid-flex .grid-item:nth-child(2) {
+    flex: 1 1 45%;
+  }
+
+  h2 {
+    width: 50%;
+  }
+}
+
+/* normal mode */
+@media (min-width: 1025px) {
+  .grid-floats .grid-item {
+    font-size: 25px;
+    float: left;
+    width: 31%;
+    text-align: center;
+  }
+  .grid-floats .grid-item p {
+    overflow: auto;
+  }
+
+  .grid-floats .grid-item:first-child {
+    width: 63%;
+  }
+
+  .grid-floats::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

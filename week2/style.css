@@ -89,6 +89,7 @@ img {
   }
   h2 {
     width: 80%;
+    font-size: 22px;
   }
 }
 
@@ -150,5 +151,9 @@ img {
     content: "";
     clear: both;
     display: table;
+  }
+  h1,
+  h2 {
+    width: 50%;
   }
 }

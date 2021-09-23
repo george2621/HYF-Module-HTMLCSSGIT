@@ -1,6 +1,5 @@
 body {
   background: #ccc;
-  width: 100%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -13,24 +12,23 @@ a {
   text-decoration: none;
 }
 
-#nav-bar {
+.navBar {
   display: flex;
   justify-content: space-between;
   top: 0;
   position: sticky;
   height: 80px;
-  width: 100%;
   color: #fff;
   background: #333;
   padding: 10px 70px;
   opacity: 0.9;
 }
 
-#nav-bar h1 {
+.navBar h1 {
   border-bottom: rgb(255, 255, 255) 3px solid;
 }
 
-#nav-list {
+.navList {
   display: flex;
   text-decoration: none;
   list-style: none;
@@ -38,14 +36,14 @@ a {
   font-size: 30px;
 }
 
-#nav-list a {
+.navList a {
   text-decoration: none;
   color: #fff;
   margin-right: 40px;
   transition: color 0.5s;
 }
 
-#nav-list a:hover {
+.navList a:hover {
   color: #666;
 }
 
@@ -74,8 +72,8 @@ img {
   overflow: auto;
 }
 
-#skills-section,
-#education-section {
+.skillsSection,
+.educationSection {
   background: #24686b;
   height: 600px;
   overflow: hidden;
@@ -141,14 +139,15 @@ img {
   .container {
     margin: 0;
   }
-  #nav-bar {
+  .navBar h1 {
+    border: none;
+  }
+  .navBar {
     text-align: center;
-    width: 100%;
     margin: 0;
   }
-  #nav-list {
+  .navList {
     display: none;
-    width: 0px;
   }
 
   .nav-item {
@@ -174,12 +173,6 @@ img {
     width: 0px;
   }
 
-  .my-skills {
-    width: 100%;
-    height: 100%;
-    padding-left: 0px;
-  }
-
   .skills {
     height: 100%;
   }
@@ -193,8 +186,15 @@ img {
     padding: auto;
     overflow: auto;
   }
-  #skills-section,
-  #education-section {
+  .my-skills {
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .skillsSection,
+  .educationSection {
     height: 100%;
   }
 
@@ -204,5 +204,51 @@ img {
   }
   .my-info {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+  .navBar {
+    text-align: center;
+    margin: 0;
+  }
+  .navList {
+    display: none;
+  }
+
+  .nav-item {
+    display: none;
+  }
+  .my-photo {
+    display: block;
+    text-align: center;
+  }
+
+  .my-photo img {
+    margin-bottom: 40px;
+  }
+
+  .about-me {
+    height: 100%;
+  }
+
+  .skillsSection,
+  .educationSection,
+  .eexperienceSection {
+    height: 100%;
+    text-align: center;
+    padding: auto;
+  }
+
+  .my-skills {
+    display: block;
+    text-align: center;
+  }
+
+  .skills,
+  .experience,
+  .education {
+    width: 100%;
+    text-align: center;
   }
 }

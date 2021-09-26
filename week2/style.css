@@ -133,7 +133,6 @@ img {
 /* normal mode */
 @media (min-width: 1025px) {
   .grid-floats .grid-item {
-    font-size: 25px;
     float: left;
     width: 31%;
     text-align: center;

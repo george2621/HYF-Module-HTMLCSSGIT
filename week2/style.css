@@ -53,6 +53,7 @@ h3 {
 .grid-item p {
   margin: 15px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .grid-item:hover {

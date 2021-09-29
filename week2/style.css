@@ -62,7 +62,7 @@ h3 {
 }
 
 .grid-flex .grid-item {
-  flex: 1 0 28%;
+  flex: 1 0 calc(90% / 3);
   text-align: center;
 }
 
@@ -71,7 +71,7 @@ img {
 }
 
 .grid-flex .grid-item:first-child {
-  flex: 2 0 58%;
+  flex: 2 0 60%;
 }
 
 /* Mobile Mode  */
@@ -97,7 +97,7 @@ img {
 @media (max-width: 1024px) and (min-width: 600px) {
   .grid-floats .grid-item {
     float: left;
-    width: 28%;
+    width: calc(88% / 3);
     text-align: center;
     overflow: auto;
   }
@@ -109,21 +109,21 @@ img {
   }
   .grid-floats .grid-item:first-child {
     float: left;
-    width: 43%;
+    width: calc(90% / 2);
   }
   .grid-floats .grid-item:nth-child(2) {
-    width: 43%;
+    width: calc(90% / 2);
   }
 
   .grid-flex .grid-item {
-    flex: 1 2 25%;
+    flex: 1 2 calc(80% / 3);
   }
   .grid-flex .grid-item:first-child {
-    flex: 1 1 45%;
+    flex: 1 1 calc(90% / 2);
   }
 
   .grid-flex .grid-item:nth-child(2) {
-    flex: 1 1 45%;
+    flex: 1 1 calc(90% / 2);
   }
 
   h2 {
@@ -135,7 +135,7 @@ img {
 @media (min-width: 1025px) {
   .grid-floats .grid-item {
     float: left;
-    width: 31%;
+    width: calc(90% / 3);
     text-align: center;
   }
   .grid-floats .grid-item p {
@@ -143,7 +143,7 @@ img {
   }
 
   .grid-floats .grid-item:first-child {
-    width: 63%;
+    width: 60%;
   }
 
   .grid-floats::after {

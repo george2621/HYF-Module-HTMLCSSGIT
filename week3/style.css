@@ -239,6 +239,7 @@ video {
 .email {
   background: #00112c !important;
   border: #a5afbd 1px solid;
+  color: #fff;
 }
 
 .copy-write p a {

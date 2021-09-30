@@ -13,7 +13,6 @@ h2 {
   font-size: 60px;
   color: #000;
   font-weight: bold;
-  width: 20%;
   margin: auto;
 }
 
@@ -35,7 +34,11 @@ h3 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-right: 40px;
+  padding-left: 0px;
+}
+
+.grid-floats {
+  padding-left: 0px;
 }
 
 .grid-item {
@@ -62,7 +65,7 @@ h3 {
 }
 
 .grid-flex .grid-item {
-  flex: 1 0 calc(90% / 3);
+  flex: 1 0 calc(calc(100% - 104px) / 4);
   text-align: center;
 }
 
@@ -71,7 +74,7 @@ img {
 }
 
 .grid-flex .grid-item:first-child {
-  flex: 2 0 60%;
+  flex: 2 0 calc(calc(100% - 58px) / 2);
 }
 
 /* Mobile Mode  */
@@ -81,9 +84,6 @@ img {
     flex-direction: column;
   }
 
-  .grid-floats {
-    margin-right: 40px;
-  }
   .grid-floats .grid-item {
     text-align: center;
   }
@@ -97,7 +97,9 @@ img {
 @media (max-width: 1024px) and (min-width: 600px) {
   .grid-floats .grid-item {
     float: left;
-    width: calc(88% / 3);
+    width: calc(
+      calc(100% - 78px) / 3
+    ); /* 18px width of border and 60px margin*/
     text-align: center;
     overflow: auto;
   }
@@ -109,21 +111,23 @@ img {
   }
   .grid-floats .grid-item:first-child {
     float: left;
-    width: calc(90% / 2);
+    width: calc(
+      calc(100% - 52px) / 2
+    ); /* 12px width of border and 40px margin*/
   }
   .grid-floats .grid-item:nth-child(2) {
-    width: calc(90% / 2);
+    width: calc(calc(100% - 52px) / 2);
   }
 
   .grid-flex .grid-item {
-    flex: 1 2 calc(80% / 3);
+    flex: 1 2 calc(calc(100% - 78px) / 3);
   }
   .grid-flex .grid-item:first-child {
-    flex: 1 1 calc(90% / 2);
+    flex: 1 1 calc(calc(100% - 52px) / 2);
   }
 
   .grid-flex .grid-item:nth-child(2) {
-    flex: 1 1 calc(90% / 2);
+    flex: 1 1 calc(calc(100% - 52px) / 2);
   }
 
   h2 {
@@ -135,7 +139,9 @@ img {
 @media (min-width: 1025px) {
   .grid-floats .grid-item {
     float: left;
-    width: calc(90% / 3);
+    width: calc(
+      calc(100% - 104px) / 4
+    ); /* 24px is the width of border and 80px is the margin*/
     text-align: center;
   }
   .grid-floats .grid-item p {
@@ -143,7 +149,9 @@ img {
   }
 
   .grid-floats .grid-item:first-child {
-    width: 60%;
+    width: calc(
+      calc(100% - 58px) / 2
+    ); /*18px the width of border and 40px margin*/
   }
 
   .grid-floats::after {

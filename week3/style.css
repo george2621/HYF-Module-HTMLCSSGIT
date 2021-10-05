@@ -6,6 +6,14 @@ body {
 .menu-area {
   position: static;
 }
+
+h1{
+  font-size: 64px;
+}
+h2{
+  font-size: 48px;
+}
+
 .mega-area {
   position: absolute;
   width: 100%;
@@ -15,7 +23,7 @@ body {
 }
 
 .nav-link {
-  color: #000 !important;
+  color: #000;
 }
 
 .item-link {
@@ -74,7 +82,6 @@ header {
 
 .paragraf-1 h1 strong {
   font-weight: 600px;
-  font-size: 64px;
   color: #000;
 }
 
@@ -132,7 +139,7 @@ video {
 
   .global {
     display: flex;
-    justify-content: start !important;
+    justify-content: start;
   }
 
   .login {
@@ -157,9 +164,8 @@ video {
   padding-top: 15%;
   float: right;
 }
-.approve h1,
-.work-with h1 {
-  font-size: 48px;
+.approve h2,
+.work-with h2 {
   line-height: 58px;
 }
 
@@ -237,10 +243,10 @@ video {
 }
 
 .email {
-  background: #00112c !important;
+  background: #00112c;
   border: #a5afbd 1px solid;
-  color: #fff;
 }
+
 
 .copy-write p a {
   text-decoration: none;
@@ -297,7 +303,7 @@ video {
 .language {
   height: 250px;
   overflow: auto;
-  background: #20304c !important;
+  background: #20304c;
 }
 
 .language a {
